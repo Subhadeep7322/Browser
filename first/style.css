@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .head {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: gray; */
+}
+
+.head .logo {
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #003366;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.head .navbar {
+    width: 45vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: aquamarine; */
+}
+
+.navbar a {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0);
+    padding: 10px 30px;
+    transition: all .5s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+}
+
+.head .logs {
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logs a {
+    width: 8.5vw;
+    height: 6.5vh;
+    text-decoration: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    font-family: arial;
+    color: white;
+    background-color: #003366;
+    border: 5px solid white;
+    transition: all .3s ease-in-out;
+}
+
+.logs a:hover {
+    background-color: white;
+    color: #003366;
+    border: 5px double #003366;
+    font-weight: 600;
+}
+
+.mid {
+    width: 100vw;
+    height: auto;
+}
+
+.mid .intro {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("/first/media/icons/pexels-lucas-bordião-18019416.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    backdrop-filter: blur(50px);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.intro .part1 {
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 5vw;
+    padding-bottom: 10vh;
+    /* background-color: aquamarine; */
+}
+
+.intro .part1 h1 {
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 1rem;
+}
+
+.intro .part1 h2 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-bottom: .5rem;
+}
+
+
+.intro .part1 span {
+    font-size: 4rem;
+    font-weight: 700;
+    -webkit-text-stroke: .5px white;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation-name: flick;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes flick {
+    0% {
+        -webkit-text-stroke: .5px white;
+        color: rgba(255, 255, 255, 0);
+    }
+    15% {
+        -webkit-text-stroke: .5px rgba(255, 255, 255, 0);
+        color: #4d392a00
+    }
+    30% {
+        -webkit-text-stroke: .5px rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+    }
+    50% {
+        -webkit-text-stroke: .5px rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 0);
+    }
+    70% {
+        -webkit-text-stroke: .5px rgba(255, 255, 255, 0);
+        color: #4d392a00;
+    }
+    90% {
+        -webkit-text-stroke: .5px rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 0);
+    }
+    100% {
+        -webkit-text-stroke: .5px rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+    }
+}
+
+.intro .part2 {
+    width: 40vw;
+    height: 40vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .part2 a {
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 1.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.5px;
+    transition-duration: 1s;
+}
+
+.intro .part2 a:hover {
+    letter-spacing: 3.5px;
+    padding: 50px;
+}
+
+.intro .part2 img {
+    width: 1.5rem;
+    margin-top: 1vh;
+    filter: invert(100%);
+}
+
+
+/* from here the bikes part is starting */
+
+.mid .showroom {
+    width: 100vw;
+    height: 70vh;
+}
+
+.showroom h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4rem;
+    padding: 50px 0;
+    padding-left: 40px;
+}
+
+.showroom .bike {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+#hero {
+    width: 100vw;
+    background: url(/first/media/models/HERO.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#zero {
+    width: 100vw;
+    background: url(/first/media/models/HERO.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    color: white;
+    padding-left: 55vw;
+    
+}

@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+}
+
+.container .head {
+    width: 100vw;
+    height: 60vh;
+    background: url(/swiggy/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.head .navbar1 {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.311);
+    backdrop-filter: blur(1px);
+}
+
+.navbar1 .part1 {
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4vw;
+}
+
+.part1 a {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.part1 a:hover {
+    scale: 1.2;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.part2 {
+    /* background-color: yellow; */
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2 a {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0 30px;
+    transition: .5s;
+}
+
+.part2 a:hover {
+    scale: 1.2;
+    position: relative;
+}
+
+.head .logo {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logo img {
+    filter: invert(100%);
+    width: 20rem;
+}
+
+.head .sub-logo {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-logo h1 {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.head .srch {
+    width: 50vw;
+    height: 8vh;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.srch .location {
+    width: 15vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-right: 1px solid rgb(58, 58, 58);
+}
+
+.location img {
+    width: 25px;
+    opacity: .7;
+    margin-right: 10px;
+}
+
+.location p {
+    color: rgb(55, 55, 55);
+    font-family: arial;
+    letter-spacing: 1.2px;
+    font-size: .8rem;
+    margin-right: 35px;
+}
+
+.srch .search {
+    width: 35vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.search img {
+    width: 20px;
+    margin: 0 20px;
+    opacity: .5;
+}
+
+.search input {
+    width: calc(35vw - 60px);
+    border: none;
+    height: 8vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.search ::placeholder {
+    color: grey;
+    font-size: .9rem;
+    position: relative;
+    top: 2px;
+    font-weight: 200;
+    letter-spacing: 1.3px;
+}
+
+.mid {
+    width: 100vw;
+    height: auto;
+    padding: 40px 0;
+}
+
+.mid .first {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10vh;
+}
+
+.first .left {
+    width: 30vw;
+    height: 30vh;
+    background: url(/swiggy/first\ bg.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.first .left:hover {
+    scale: 1.1;
+}
+
+.det {
+    height: 9vh;
+    background-color: rgba(51, 41, 41, 0.363);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.det h3 {
+    font-family: arial;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+}
+
+.det p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    font-size: .8rem;
+}
+
+
+.first .right {
+    width: 30vw;
+    height: 30vh;
+    background: url(/swiggy/second\ bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.first .right:hover {
+    scale: 1.1;
+}
+
+.second {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12vh;
+}
+
+.second .best {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/swiggy/victoria.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.best h1 {
+    color: white;
+    font-family: arial;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 40px;
+}
+
+.best img {
+    filter: invert(100%);
+}
+
+.mid .third {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgba(128, 128, 128, 0.411); */
+}
+
+.third .part{
+    width: 30vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+
+.third #one {
+    background: url(/swiggy/places/jw.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.third #two {
+    background: url(/swiggy/places/itc.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.third #three {
+    background: url(/swiggy/places/vertex.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.part .details {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.392);
+    backdrop-filter: blur(2px);
+    padding: 10px 0;
+}
+
+.part .details h1 {
+    font-family: arial;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    color: white;
+    transition: .5s;
+}
+
+.part .details h1:hover {
+    color: transparent;
+    -webkit-text-stroke: .5px white;
+    letter-spacing: 5px;
+}
+
+.part .details button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part .details a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    padding: 10px 30px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.part .details a:hover {
+    background-color: transparent;
+    color: white;
+    letter-spacing: 2px;
+    scale: 1.1;
+}
+
+.mid .fourth {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh auto;
+}
+
+.fourth iframe {
+    width: 100vw;
+    height: 50vh;
+    margin: 5vh 0;
+}
+
+.fourth .dwnld {
+    width: 100vw;
+    height: 50vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.dwnld img {
+    height: 30vh;
+    margin: 0 5vw;
+}
+
+.dwnld .form {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dwnld .form h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+}
+
+.dwnld .form p {
+    font-size: 1.3rem;
+}
+
+
+
+
+
